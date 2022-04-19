@@ -23,6 +23,7 @@ public class Runner {
 //        3. Add "Islay" after "Jura" and before "Mull"
             scottishIslands.add(2,"Islay");
 //        4. Print out the index position of "Skye"
+        System.out.println(scottishIslands.indexOf("Skye"));
         
 //        5. Remove "Tresco" from the list by name
 
