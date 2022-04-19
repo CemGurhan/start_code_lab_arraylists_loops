@@ -63,7 +63,17 @@ public class Runner {
             Collections.sort(numbers);
         System.out.println("Difference between max and min number: "+(numbers.get(numbers.size()-1)-numbers.get(0)));
 //        3. Print true if the list contains a 1 next to a 1 somewhere
+        for(int i=1;i<numbers.size();i++){
+            if(numbers.get(i)==numbers.get(i-1)){
+                System.out.println(numbers.get(i));
+            }
+        }
 //        4. Print the sum of the numbers
+        int sum=0;
+        for(int i=0;i<numbers.size();i++){
+            sum+=numbers.get(i);
+        }
+        System.out.println("Sum: " + sum);
 //        5. Print the sum of the numbers...
 //           ...except the number 13 is unlucky, so it does not count...
 //           ...and numbers that come immediately after a 13 also do not count
