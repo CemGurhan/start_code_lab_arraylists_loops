@@ -87,7 +87,8 @@ public class Runner {
         int newSum=0;
         for(int i=0;i<numbers.size();i++){
             if(numbers.get(i)==13){
-                break;
+                numbers.remove(i+1);
+                numbers.remove(i);
             }
             newSum+=numbers.get(i);
         }
