@@ -59,13 +59,17 @@ public class Runner {
             }
         System.out.println("Even numbers: " + evenNumbers);
 //        2. Print the difference between the largest and smallest value
+            List<Integer> ascendingList = new ArrayList();
+        Collections.addAll(ascendingList, 1, 1, 4, 2, 7, 1, 6, 15, 13, 99, 7);
 
-            Collections.sort(numbers);
-        System.out.println("Difference between max and min number: "+(numbers.get(numbers.size()-1)-numbers.get(0)));
+            Collections.sort(ascendingList);
+        System.out.println("Difference between max and min number: "+(ascendingList.get(numbers.size()-1)-ascendingList.get(0)));
 //        3. Print true if the list contains a 1 next to a 1 somewhere
+
+
         for(int i=1;i<numbers.size();i++){
             if(numbers.get(i)==numbers.get(i-1)){
-                System.out.println(numbers.get(i));
+                System.out.println("true");
             }
         }
 //        4. Print the sum of the numbers
@@ -80,6 +84,15 @@ public class Runner {
 //          HINT - You will need to track the index throughout the loop
 //
 //          So [7, 13, 2] would have sum of 9.
+        int newSum=0;
+        for(int i=0;i<numbers.size();i++){
+            if(numbers.get(i)==13){
+                break;
+            }
+            newSum+=numbers.get(i);
+        }
+        System.out.println("New sum: "+newSum);
+
 
     }
 
