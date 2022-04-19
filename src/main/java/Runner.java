@@ -49,12 +49,19 @@ public class Runner {
         System.out.println("numbers: " + numbers);
 
 //        1. Print out a list of the even integers
+        List<Integer> evenNumbers = new ArrayList<>();
             for(int i=0;i<numbers.size();i++){
+
                 if(numbers.get(i)%2==0){
-                    System.out.println(numbers.get(i));
+                    evenNumbers.add(numbers.get(i));
                 }
+
             }
+        System.out.println("Even numbers: " + evenNumbers);
 //        2. Print the difference between the largest and smallest value
+
+            Collections.sort(numbers);
+        System.out.println("Difference between max and min number: "+(numbers.get(numbers.size()-1)-numbers.get(0)));
 //        3. Print true if the list contains a 1 next to a 1 somewhere
 //        4. Print the sum of the numbers
 //        5. Print the sum of the numbers...
