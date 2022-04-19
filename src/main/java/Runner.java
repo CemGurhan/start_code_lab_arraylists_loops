@@ -68,7 +68,7 @@ public class Runner {
 
 
         for(int i=1;i<numbers.size();i++){
-            if(numbers.get(i)==numbers.get(i-1)){
+            if(numbers.get(i)==numbers.get(i-1)&&(numbers.get(i)+numbers.get(i-1)==2)){
                 System.out.println("true");
             }
         }
