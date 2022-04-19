@@ -23,13 +23,14 @@ public class Runner {
 //        3. Add "Islay" after "Jura" and before "Mull"
             scottishIslands.add(2,"Islay");
 //        4. Print out the index position of "Skye"
-        System.out.println(scottishIslands.indexOf("Skye"));
+        System.out.println("Index position of Skye: " + scottishIslands.indexOf("Skye"));
 
 //        5. Remove "Tresco" from the list by name
     scottishIslands.remove("Tresco");
 //        6. Remove "Arran" from the list by index
         scottishIslands.remove(5);
 //        7. Print the number of islands in your arraylist
+        System.out.println("Number of islands in arraylist: " +scottishIslands.size());
 //        8. Sort the list alphabetically
 //        9. Print out all the islands using a for loop
 
