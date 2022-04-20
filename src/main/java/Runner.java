@@ -84,7 +84,7 @@ public class Runner {
 //          So [7, 13, 2] would have sum of 9.
         int newSum=0;
         for(int i=0;i<numbers.size();i++){
-            if(numbers.get(i)==13){
+            if(numbers.get(i)==13 && i+1<=numbers.size()-1){
                 numbers.remove(i+1);
                 numbers.remove(i);
             }
